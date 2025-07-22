@@ -82,6 +82,20 @@ export function TodoList() {
   }
   return (
     <>
+    <div className='container m'>
+    <div className='container mt-4 mb-3'>
+      <ul className="nav nav-tabs">
+          <li className="nav-item">
+            <a className="nav-link active disabled" aria-current="page" href="localhost:3000">Active</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/fetch">Fetch</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/axios">Axios</a>
+          </li>
+        </ul>
+      </div>
       <h1 className='alert alert-info'>Listado de Tareas</h1>
 
       <div className='input-group mt-3 mb-3'>
@@ -99,6 +113,7 @@ export function TodoList() {
         ))}
       </ul>
       <ResumenTareas />
+      </div>
     </>
   )
 }
